@@ -2,78 +2,28 @@
   display: flex;
   width: 100%;
   padding: 15px;
-  border-bottom: 1px solid #EDEEF2;
   &__container {
     display: flex;
     width: 100%;
     padding: 15px 0;
   }
 
-  &__logo {
-    margin-right: 48px;
-  }
-
-  &__search {
-    margin-right: auto;
-  }
 
   &__nav {
     margin-left: auto;
     display: flex;
     gap: 28px;
-    align-items: center;
+    flex-direction: column;
     a {
       text-decoration: none;
-      font-family: "Nunito";
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 20px;
+      font-family: 'League Spartan';
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 40px;
       letter-spacing: 0.1px;
-      color: #2b2b43;
-      &:nth-child(2) {
-        padding-right: 20px;
-        border-right: 1px solid #EDEEF2;
-      }
+      color: #ebebe8;
     }
   }
 
-  &__btn {
-    width: 20px;
-    height: 20px;
-    padding: 14px;
-    background: #f3f4ff;
-    border-radius: 16px;
-    position: relative;
-    margin-left: 24px;
-    display: flex;
-    align-items: center;
-    gap: 17px;
-  }
-}
-.headerBusket {
-  &__counter {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: #4e60ff;
-    border-radius: 10px;
-    padding: 1px 4px;
-
-    span {
-      display: flex;
-      font-family: "Nunito";
-      font-weight: 700;
-      font-size: 10px;
-      line-height: 14px;
-      color: #ffffff;
-    }
-  }
-}
-.headerProfile {
-  padding: 1px;
-  display: flex;
-  width: 48px;
-  height: 48px;
-  border: 2px solid #edeef2;
-  border-radius: 16px;
+  
 }

@@ -1,0 +1,70 @@
+.aboutMe {
+    margin-top: 200px;
+  .container {
+    display: flex;
+  }
+  &__text {
+    font-family: "League Spartan";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 155%;
+    color: #ebebe8;
+    display: flex;
+    max-width: 1000px;
+    margin-right: 250px;
+
+  }
+}
+
+.img__container {
+  max-width: 200px;
+  position: relative;
+  margin-top: 50px;
+  .orbit-image {
+    position: absolute;
+  }
+  img {
+    right: 20px;
+    width: 80px;
+    height: 80px;
+  }
+  .orbit-image:nth-child(1) {
+    left: 50px;
+    top: 25px;
+  }
+  .orbit-image:nth-child(2) {
+    right: 60px;
+    bottom: -40px;
+  }
+  .orbit-image:nth-child(3) {
+    left: 33px;
+    right: 10px;
+    bottom: 150px;
+  }
+  .orbit-image:nth-child(4) {
+    right: 150px;
+  }
+  .orbit-image:nth-child(5) {
+    bottom: 100px;
+  }
+
+  @keyframes bounce-animation {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  @for $i from 1 through 5 {
+    .orbit-image:nth-child(#{$i}) {
+      animation: bounce-animation calc(1s + ($i * 0.2s)) infinite;
+      animation-delay: ($i * 0.1s);
+    //   width: 100px;
+    //   height: 100px;
+      margin: 10px;
+    }
+}
+}

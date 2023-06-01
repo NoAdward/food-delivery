@@ -1,0 +1,27 @@
+.home {
+    margin-top: 50px;
+  .container {
+    display: flex;
+    gap: 45px;
+    align-items: flex-end;
+  }
+  &__photo {
+    max-width: 400px;
+    img {
+      max-width: 400px;
+      display: flex;
+      justify-content: flex-start;
+      overflow: hidden;
+      border-radius: 5%;
+      filter: drop-shadow(0 0 10px #c0c0c0);
+    }
+  }
+}
+.title {
+  font-family: "League Spartan";
+  font-weight: 500;
+  font-size: 90px;
+  line-height: 230px;
+  color: #C3C2BC;
+  display: flex;
+}

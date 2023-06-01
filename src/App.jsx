@@ -3,8 +3,8 @@ import { useState } from 'react'
 import './App.scss'
 import { Route, Routes } from 'react-router-dom'
 import Header from './components/UI/Header/Header'
-import Home from './views/Home'
-import Profile from './views/Profile'
+import Home from './views/Home/Home'
+import AboutMe from './views/AboutMe/AboutMe';
 
 
 
@@ -16,8 +16,9 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/profile' element={<Profile />} />
+        {/* <Route path='/aboutMe' element={<AboutMe />} /> */}
       </Routes>
+      <AboutMe />
     </>
   )
 }

@@ -1,0 +1,8 @@
+.download-button {
+    margin-top: 50px;
+    margin-bottom: 200px;
+    color: brown;
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
