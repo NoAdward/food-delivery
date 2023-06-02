@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+
 import "./AboutMe.scss";
 import HTML from "/src/components/icons/html.svg";
 import CSS from "/src/components/icons/css.svg";
@@ -17,7 +17,6 @@ const AboutMe = () => {
           I am 19 years old <br />
            I am a novice Front-end Developer  <br />
            I'm learning HTML, CSS, Sass, JS and React
-          framework
         </div>
         <div className="img__container">
           <img src={HTML} alt="" className="orbit-image" />

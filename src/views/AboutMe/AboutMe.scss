@@ -1,7 +1,17 @@
 .aboutMe {
     margin-top: 200px;
+    @media (max-width: 990px) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    
   .container {
     display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 990px) {
+      flex-direction: column;
+    }
   }
   &__text {
     font-family: "League Spartan";
@@ -9,10 +19,15 @@
     font-weight: 300;
     font-size: 32px;
     line-height: 155%;
-    color: #ebebe8;
+    color: #C3C2BC;
     display: flex;
     max-width: 1000px;
     margin-right: 250px;
+    @media (max-width: 990px){
+      margin-right: 0;
+      text-align: center;
+    }
+
 
   }
 }
@@ -21,6 +36,8 @@
   max-width: 200px;
   position: relative;
   margin-top: 50px;
+  height: 200px;
+  margin-inline: auto;
   .orbit-image {
     position: absolute;
   }
@@ -31,11 +48,14 @@
   }
   .orbit-image:nth-child(1) {
     left: 50px;
-    top: 25px;
+    top: 50px;
   }
   .orbit-image:nth-child(2) {
     right: 60px;
     bottom: -40px;
+    @media (max-width: 990px) {
+      right: 0;
+    }
   }
   .orbit-image:nth-child(3) {
     left: 33px;
@@ -44,6 +64,10 @@
   }
   .orbit-image:nth-child(4) {
     right: 150px;
+    @media (max-width: 990px) {
+      right: 100px;
+      top: 30px;
+    }
   }
   .orbit-image:nth-child(5) {
     bottom: 100px;

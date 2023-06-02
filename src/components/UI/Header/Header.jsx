@@ -9,7 +9,7 @@ const Header = () => {
     <header className={style.header}>
      <div className={`container ${style.header__container}`}>
       <div className={style.header__nav}>
-        <Link to={"/"}>About me</Link>
+        <Link to="#section-2">About me</Link>
         <Link to={"/"}>My projects</Link>
         <Link to={"/"}>Contact</Link>
       </div>

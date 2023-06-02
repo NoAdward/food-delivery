@@ -1,8 +1,30 @@
 .download-button {
-    margin-top: 50px;
-    margin-bottom: 200px;
-    color: brown;
-    &:hover {
-        transform: translateY(-3px);
-    }
+    max-width: 300px;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 29px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  padding: 15px 30px;
+  background-color: #837B77;
+  box-shadow: 0 0 0 0 #EBEBE8;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #EBEBE8;
+  &:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 5px 5px 0 0 #EBEBE8;
+  };
+  &:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 #EBEBE8;
+  };
+  @media (max-width: 990px) {
+    margin-inline: auto;
+  }
 }
+
+  
+ 

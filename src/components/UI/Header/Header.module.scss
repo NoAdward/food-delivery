@@ -8,7 +8,6 @@
     padding: 15px 0;
   }
 
-
   &__nav {
     margin-left: auto;
     display: flex;
@@ -16,14 +15,31 @@
     flex-direction: column;
     a {
       text-decoration: none;
-      font-family: 'League Spartan';
+      font-family: "League Spartan";
       font-weight: 500;
       font-size: 22px;
       line-height: 40px;
       letter-spacing: 0.1px;
       color: #ebebe8;
+      border: none;
+      background: none;
     }
   }
+  a::before {
+    margin-left: auto;
+  }
+  a::after,
+  a::before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #C3C2BC;
+    display: block;
+    transition: 0.5s;
+  }
 
-  
+  a:hover::after,
+  a:hover::before {
+    width: 100%;
+  }
 }

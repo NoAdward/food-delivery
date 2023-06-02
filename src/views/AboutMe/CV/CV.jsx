@@ -10,9 +10,9 @@ function DownloadButton() {
 
   return (
     <div className="container">
-      <button onClick={handleDownload}  className="download-button">
-        Скачать документ
-      </button>
+      <a onClick={handleDownload}  className="download-button">
+        Download My CV
+      </a>
     </div>
   );
 }

@@ -15,8 +15,12 @@ import slider_3 from "/src/assets/slider_3.png";
 
 const Project = () => {
   return (
-    <div className="container">
-      <h1 className="heading">My projects</h1>
+    <div className="container_1">
+      <div className="container">
+        <h1 id="section-2" className="heading">
+          My projects
+        </h1>
+      </div>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

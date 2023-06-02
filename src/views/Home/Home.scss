@@ -4,6 +4,10 @@
     display: flex;
     gap: 45px;
     align-items: flex-end;
+    @media (max-width: 990px) {
+      flex-wrap: wrap-reverse;
+    }
+    
   }
   &__photo {
     max-width: 400px;
@@ -24,4 +28,11 @@
   line-height: 230px;
   color: #C3C2BC;
   display: flex;
+  @media (max-width: 990px) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 130px;
+    
+  }
 }
